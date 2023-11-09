@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mooli&family=Poppins:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <title>Educational Qualifications</title>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        background-color: rgb(2, 2, 43);
+        color: white;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .edu-container {
+        width: 100%;
+        height: 80vh;
+        padding: 35px 10%;
+    }
+
+    /* main.edu-row{
+    display: grid;
+    grid-template-columns: 1fr;
+} */
+
+    section {
+        font-family: 'Mooli', sans-serif;
+    }
+
+    section > hr{
+        width: 150px;
+        height: 5px;
+        margin-left: -2px;
+        margin-top: -33px;
+    }
+    .edu-contents{
+        padding: 0 30px;
+        border-left: 2px solid gray ;
+    }
+
+    .edu-box{
+        position: relative;
+        padding: 20px;
+        margin-bottom: 20px;
+        border: 1px solid gray;
+        background-color: #0e1b5426;
+        cursor: pointer;
+        transition: all 0.4s;
+    }
+
+    .edu-box:hover{
+        box-shadow: 0px 3px 12px 0px #ccc;
+        border: 1px solid transparent;
+    }
+
+    .edu-box::before{
+        content: '';
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        right: calc(100% + 22px);
+        top: 0;
+        background-color: #95a2cb;
+        border: 2px solid white;
+    }
+
+    .edu-box h3{
+        position: relative;
+        color: #a7b0cf;
+    }
+    .edu-box h6{
+        font-size: 12px;
+        /* padding: 6px 0 6px; */
+    }
+
+    .edu-box p{
+        line-height: 1.2;
+        font-size: 20px;
+        color: #666;
+        /* padding: 2px; */
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .footer {
+    display: flex;
+    padding: -5px 60px;
+    justify-content: space-evenly;
+
+}
+
+</style>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">
+                <a href="/">Sumaiya Akter</a>
+            </div>
+            <div class="right">
+                <ul>
+                    <li><a href="../education.html">Education</a></li>
+                    <li><a href="skill.html">Skills</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="../experience.html">Work Experience</a></li>
+                    <li><a href="">MORE</a></li>
+                    <li><a href="/">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="edu-container">
+        <main class="edu-row">
+            <section class="edu-col">
+                <header class="edu-title" style="color: #95a2cb; margin-bottom: 40px;">
+                    <h2>EDUCATION</h2>
+                </header>
+                <hr>
+                <div class="edu-contents">
+                    <div class="edu-box">
+                        <h3>Tejgaon Govt High School</h3>
+                        <p>Class of 2015 </p>
+                        <h6><strong>GPA: </strong>4.89</h6>
+                    </div>
+                    <div class="edu-box">
+                        <h3>Tejgaon Mohila College</h3>
+                        <p>Class of 2017 </p>
+                        <h6><strong>GPA: </strong>4.42</h6>
+                    </div>
+                    <div class="edu-box">
+                        <h3>United International University</h3>
+                        <p>2019-2023 </p>
+                        <h6><strong>CGPA: </strong>3.67</h6>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+
+
+
+    <footer>
+        <div class="footer-rights">
+            Copyright &#169; Sumaiya Akter | All Rights Reserved
+        </div>
+    </footer>
+</body>
+
+</html>
